@@ -4,3 +4,5 @@
 
 原始课程代码地址，需注册 https://www.computervision.zone/topic/basics-py/
 
+- 第一课 handtracking basic
+- 第二课 handtracking moudule
