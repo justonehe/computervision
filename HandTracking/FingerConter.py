@@ -8,8 +8,12 @@ cap.set(4, hCam)
 
 folderPath = "FingerImages"
 myList = os.listdir(folderPath)
-print(myList)
+overlayList = []
+for imPath in myList:
+    image = cv2.imread(f'{folderPath}/{imPath}')
+    overlayList.append(image)
 while True:
     success, img = cap.read()
+    img[0:214, 0:163] = overlayList[0]
     cv2.imshow("Image", img)
     cv2.waitKey(1)
